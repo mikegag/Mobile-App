@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #444059;
+}
+
+#container /* entire application */ {
+    max-width: 390px;
+    background: #1B1924;
+    font-family: Inter, sans-serif;
+    margin: 1em auto;
+}
+
+#upper-section, #lower-section, #input-section {
+    display: flex;
+    justify-content: center;
+}
+
+#upper-section, #lower-section { 
+    flex-direction: column; 
+    align-items: center;
+}
+
+#main-title, #publish-btn, #subtitle {
+    font-family: Josefin Sans, sans-serif;
+    font-style: normal;
+    line-height: normal;
+}
+
+#main-img /* main image of freddie mercury */ {
+    width: 5.7em;
+    height: 5.7em;
+    margin-top: 2.5em;
+}
+
+#main-title /* main title "we are the champions */ {
+    color: #FFF;
+    font-size: 1.6em;
+    font-weight: 700;
+    margin-bottom: 0.8em;
+}
+
+#input-section /* input section containing the three inputs "write endorsement" , "from" & "to" */ {
+    align-items: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.input /* class applying to input section */ {
+    border-radius: 8px;
+    border: 1px solid #444059;
+    background: #444059;
+    color: #8F8F8F;
+    font-family: Inter,sans-serif;
+    font-size: 0.9em;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#endorsement-input /* "write endorsement" input area */ {
+    min-height: 8em; 
+    max-height: 8em; 
+    max-width: 19.85em;
+    min-width: 19.85em;
+    padding: 1em;
+    margin-bottom: 0.7em;
+}
+
+#sender-input, #receiver-input /* "From" & "to" input area */ {
+    width: 10.3em;
+    height: 2.3em;
+    margin-bottom: 0.7em;
+    text-align: center;
+}
+
+#sender-input /* "from" input */ {
+    margin-left: 0;
+    margin-right: 0.6em;
+}
+
+#publish-btn /* "publish" button */ {
+    border-radius: 8px;
+    border: 1px solid #28A9F1;
+    background: #28A9F1;
+    color: #04131C;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 700;
+    padding: 0.8em 5.3em;
+}
+
+#subtitle /* "- endorsements -" subtitle*/ {
+    color: #FFF;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 0.1em;
+    margin-top: 1.1em;
+}
+
+#endorsement-output, #endorsement-post-info, #endorsement-post-bottom {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#endorsement-output /* endorsement post section */ {
+    text-align: start;
+    list-style-type: none;
+    flex-direction: column-reverse;
+    background: #1B1924;
+    width: 24.3em;
+    padding: 0%;
+    margin: 0.5em auto;
+}
+
+.endorsement-post /* individual endorsement post */ {
+    color: #1B1924;
+    font-family: Inter, sans-serif;
+    font-size: 0.8em;
+    font-style: normal;
+    font-weight: 700;
+    width: 22.8em;
+    padding: 1em; 
+    margin: 1em auto;
+    background: white;
+}
+
+#endorsement-text /* body text inside endorsement post */
+{ font-weight: 400; }
+
+#sender-output /* "from" output inside endorsement post */
+{ width: 20em; }
+
+#endorsement-likes /* heart and like count inside endorsement post */
+{ width: 3em; }
+
+#heartSymbol:hover /* heart symbol inside endorsement post */
+{ color: red; }

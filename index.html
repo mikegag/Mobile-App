@@ -3,9 +3,30 @@
     <head>
         <title>We are the Champions</title>
         <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
     <body>
-        <h1>We are the Champions</h1>
-        <script src="index.js"></script>
+        <main id="container">
+            <div id="upper-section">
+                <img src="assets/freddie.png" alt="freddie mercury raising his hand" id="main-img"> 
+                <h1 id="main-title">We are the Champions</h1>
+                <div id="input-section"> 
+                    <textarea type="text" placeholder="Write your endorsement here" id="endorsement-input" class="input"></textarea>
+                    <input type="text" placeholder="From" id="sender-input" class="input">
+                    <input type="text" placeholder="To" id="receiver-input" class="input">
+                </div>
+                <button id="publish-btn"> Publish</button>
+            </div>
+            <div id="lower-section">
+                <h3 id="subtitle"> - Endorsements - </h3>
+                <ul id="endorsement-output">
+                </ul>
+            </div>
+        </main>
+         <script src="index.js" type="module"></script>
     </body>
 </html>
